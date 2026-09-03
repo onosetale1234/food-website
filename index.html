@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Harvest PH | Rescue Good Food</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar">
+
+      <a href="#" class="logo">
+        🌱 Harvest <span>PH</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#meals">Find Meals</a>
+        <a href="#how">How It Works</a>
+        <a href="#restaurants">Restaurants</a>
+        <a href="#impact">Our Impact</a>
+      </div>
+
+      <a href="#meals" class="nav-button">
+        Find a Meal
+      </a>
+
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <div class="tag">
+        🌱 Fighting food waste in Port Harcourt
+      </div>
+
+      <h1>
+        Good food deserves
+        <span>another chance.</span>
+      </h1>
+
+      <p>
+        Harvest PH connects Port Harcourt restaurants with
+        residents, turning end-of-day surplus into affordable
+        meals instead of waste.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#meals" class="btn primary">
+          Find rescued meals →
+        </a>
+
+        <a href="#restaurants" class="btn secondary">
+          Partner with us
+        </a>
+      </div>
+
+      <div class="stats">
+
+        <div>
+          <strong>1,250+</strong>
+          <small>Meals rescued</small>
+        </div>
+
+        <div>
+          <strong>42</strong>
+          <small>Restaurant partners</small>
+        </div>
+
+        <div>
+          <strong>850kg</strong>
+          <small>Food diverted</small>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-food">
+
+      <div class="food-circle">
+        🍛
+      </div>
+
+      <div class="floating-card card-top">
+        🍱
+        <div>
+          <strong>Fresh meals</strong>
+          <small>Saved from waste</small>
+        </div>
+      </div>
+
+      <div class="floating-card card-bottom">
+        💚
+        <div>
+          <strong>Save money</strong>
+          <small>Save the planet</small>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section">
+
+    <div class="section-title">
+
+      <span>HOW IT WORKS</span>
+
+      <h2>
+        From surplus to someone's supper.
+      </h2>
+
+      <p>
+        We make it easy for restaurants to rescue surplus
+        food and for residents to enjoy delicious meals for less.
+      </p>
+
+    </div>
+
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="number">01</div>
+        <div class="icon">🏪</div>
+
+        <h3>Restaurants list surplus</h3>
+
+        <p>
+          Restaurants list fresh food that remains
+          at the end of the day.
+        </p>
+      </div>
+
+
+      <div class="step">
+        <div class="number">02</div>
+        <div class="icon">📱</div>
+
+        <h3>You discover a meal</h3>
+
+        <p>
+          Browse affordable rescued meals available
+          around Port Harcourt.
+        </p>
+      </div>
+
+
+      <div class="step">
+        <div class="number">03</div>
+        <div class="icon">💳</div>
+
+        <h3>Reserve your meal</h3>
+
+        <p>
+          Reserve your meal online and pay securely.
+        </p>
+      </div>
+
+
+      <div class="step">
+        <div class="number">04</div>
+        <div class="icon">🥡</div>
+
+        <h3>Pick up & enjoy</h3>
+
+        <p>
+          Pick up your rescued meal from the restaurant.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MEALS -->
+  <section id="meals" class="meals">
+
+    <div class="section-title">
+
+      <span>AVAILABLE TODAY</span>
+
+      <h2>
+        Rescued meals near you.
+      </h2>
+
+      <p>
+        Great food. Better prices. Less waste.
+      </p>
+
+    </div>
+
+
+    <div class="search">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search meals or restaurants..."
+      >
+
+    </div>
+
+
+    <div class="meal-grid" id="mealGrid">
+
+
+      <!-- MEAL 1 -->
+      <div class="meal-card">
+
+        <div class="meal-image">
+          🍗
+          <span>45% OFF</span>
+        </div>
+
+        <div class="meal-content">
+
+          <small>The Garden Restaurant</small>
+
+          <h3>Jollof Rice & Chicken</h3>
+
+          <p>
+            📍 GRA Phase 2, Port Harcourt
+          </p>
+
+          <div class="meal-bottom">
+
+            <div>
+              <strong>₦1,800</strong>
+              <del>₦3,500</del>
+            </div>
+
+            <button onclick="reserveMeal('Jollof Rice & Chicken')">
+              Reserve
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- MEAL 2 -->
+      <div class="meal-card">
+
+        <div class="meal-image yellow">
+          🍚
+          <span>50% OFF</span>
+        </div>
+
+        <div class="meal-content">
+
+          <small>Taste Haven</small>
+
+          <h3>Fried Rice & Chicken</h3>
+
+          <p>
+            📍 Old GRA, Port Harcourt
+          </p>
+
+          <div class="meal-bottom">
+
+            <div>
+              <strong>₦2,000</strong>
+              <del>₦4,000</del>
+            </div>
+
+            <button onclick="reserveMeal('Fried Rice & Chicken')">
+              Reserve
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- MEAL 3 -->
+      <div class="meal-card">
+
+        <div class="meal-image orange">
+          🌯
+          <span>46% OFF</span>
+        </div>
+
+        <div class="meal-content">
+
+          <small>City Bites</small>
+
+          <h3>Beef Shawarma</h3>
+
+          <p>
+            📍 D-Line, Port Harcourt
+          </p>
+
+          <div class="meal-bottom">
+
+            <div>
+              <strong>₦1,500</strong>
+              <del>₦2,800</del>
+            </div>
+
+            <button onclick="reserveMeal('Beef Shawarma')">
+              Reserve
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- MEAL 4 -->
+      <div class="meal-card">
+
+        <div class="meal-image purple">
+          🍝
+          <span>47% OFF</span>
+        </div>
+
+        <div class="meal-content">
+
+          <small>Mama's Kitchen</small>
+
+          <h3>Spaghetti & Chicken</h3>
+
+          <p>
+            📍 Rumuola, Port Harcourt
+          </p>
+
+          <div class="meal-bottom">
+
+            <div>
+              <strong>₦1,600</strong>
+              <del>₦3,000</del>
+            </div>
+
+            <button onclick="reserveMeal('Spaghetti & Chicken')">
+              Reserve
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- MEAL 5 -->
+      <div class="meal-card">
+
+        <div class="meal-image green">
+          🥘
+          <span>45% OFF</span>
+        </div>
+
+        <div class="meal-content">
+
+          <small>Naija Flavours</small>
+
+          <h3>Pounded Yam & Egusi</h3>
+
+          <p>
+            📍 Trans Amadi, Port Harcourt
+          </p>
+
+          <div class="meal-bottom">
+
+            <div>
+              <strong>₦2,200</strong>
+              <del>₦4,000</del>
+            </div>
+
+            <button onclick="reserveMeal('Pounded Yam & Egusi')">
+              Reserve
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- MEAL 6 -->
+      <div class="meal-card">
+
+        <div class="meal-image red">
+          🍔
+          <span>47% OFF</span>
+        </div>
+
+        <div class="meal-content">
+
+          <small>Urban Grill</small>
+
+          <h3>Chicken Burger</h3>
+
+          <p>
+            📍 Peter Odili, Port Harcourt
+          </p>
+
+          <div class="meal-bottom">
+
+            <div>
+              <strong>₦1,700</strong>
+              <del>₦3,200</del>
+            </div>
+
+            <button onclick="reserveMeal('Chicken Burger')">
+              Reserve
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- IMPACT -->
+  <section id="impact" class="impact">
+
+    <div class="impact-text">
+
+      <span>OUR IMPACT</span>
+
+      <h2>
+        Every meal rescued is
+        <em>a win for everyone.</em>
+      </h2>
+
+      <p>
+        Harvest PH helps restaurants recover value from
+        surplus food while giving residents access to quality
+        meals at lower prices.
+      </p>
+
+    </div>
+
+
+    <div class="impact-grid">
+
+      <div>
+        <strong>1,250+</strong>
+        <span>Meals rescued</span>
+      </div>
+
+      <div>
+        <strong>850kg</strong>
+        <span>Food waste prevented</span>
+      </div>
+
+      <div>
+        <strong>₦2.4M+</strong>
+        <span>Value recovered</span>
+      </div>
+
+      <div>
+        <strong>42</strong>
+        <span>Local businesses</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RESTAURANT CTA -->
+  <section id="restaurants" class="restaurant">
+
+    <div>
+
+      <span>FOR RESTAURANTS</span>
+
+      <h2>
+        Turn your surplus into
+        <em>extra revenue.</em>
+      </h2>
+
+      <p>
+        Instead of throwing away unsold food at the end of
+        the day, list it on Harvest PH and reach hungry
+        customers in Port Harcourt.
+      </p>
+
+      <button
+        class="btn primary"
+        onclick="restaurantSignup()"
+      >
+        Become a restaurant partner →
+      </button>
+
+    </div>
+
+    <div class="chef">
+      🧑🏾‍🍳
+    </div>
+
+  </section>
+
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+
+    <span>READY TO MAKE A DIFFERENCE?</span>
+
+    <h2>
+      Eat well.<br>
+      Waste less.
+    </h2>
+
+    <p>
+      Join Harvest PH and help make Port Harcourt's food
+      system more sustainable.
+    </p>
+
+    <a href="#meals" class="btn white">
+      Browse today's meals →
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      🌱 Harvest <span>PH</span>
+    </div>
+
+    <p>
+      Rescuing good food. Supporting local businesses.
+      Feeding our community.
+    </p>
+
+    <div class="footer-links">
+      <a href="#meals">Find Meals</a>
+      <a href="#how">How It Works</a>
+      <a href="#restaurants">Restaurants</a>
+      <a href="#impact">Our Impact</a>
+    </div>
+
+    <small>
+      © 2026 Harvest PH. All rights reserved.
+    </small>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
